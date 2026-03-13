@@ -24,7 +24,7 @@ declare namespace parseDiff {
   }
 
   export interface NormalChange {
-    type: 'normal';
+    type: "normal";
     ln1: number;
     ln2: number;
     normal: true;
@@ -32,20 +32,20 @@ declare namespace parseDiff {
   }
 
   export interface AddChange {
-    type: 'add';
+    type: "add";
     add: true;
     ln: number;
     content: string;
   }
 
   export interface DeleteChange {
-    type: 'del';
+    type: "del";
     del: true;
     ln: number;
     content: string;
   }
 
-  export type ChangeType = 'normal' | 'add' | 'del';
+  export type ChangeType = "normal" | "add" | "del";
 
   export type Change = NormalChange | AddChange | DeleteChange;
 }
