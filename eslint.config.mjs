@@ -6,7 +6,7 @@ import prettierRecommended from "eslint-plugin-prettier/recommended";
 export default tseslint.config(
   js.configs.recommended,
   ...tseslint.configs.recommended, // Přidá TS pravidla
-  prettierRecommended,             // Přidá Prettier (musí být poslední)
+  prettierRecommended, // Přidá Prettier (musí být poslední)
   {
     languageOptions: {
       globals: {
